@@ -33,18 +33,18 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <
+          bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //│  B       │  Y       │  O       │  U       │  '       │   │  "       │  L       │  D       │  W       │  V       │
+            &kp B      &kp Y      &kp O      &kp U      &kp QUOT       &kp SQT    &kp L      &kp D      &kp W      &kp V
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
+        //│  C       │  I       │  E       │  A       │  ,       │   │  .       │  H       │  T       │  S       │  N       │
+            &kp C      &kp I      &kp E      &kp A      &kp COMMA     &kp DOT    &kp H      &kp T      &kp S      &kp N
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+        //│  G       │  X       │  J       │  K       │  Z       │   │  Q       │  R       │  M       │  F       │  P       │
+            &kp G      &kp X      &kp J      &kp K      &kp Z          &kp Q      &kp R      &kp M      &kp F      &kp P
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp ENTER     &kp SPACE  &lt 1 BSPC
+                                            &lt 2 TAB  &lt 1 BSPC     &kp SPACE   &kp ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
