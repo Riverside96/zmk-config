@@ -53,7 +53,7 @@
         //│  Z          │  X       │  C       │  V       │  B       │   │  N       │  M       │  ,       │  .       │  /       
             &kp Z         &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp SLASH
         //╰─────────----┴──────────┴──────────-─────-─────-──────────┤   ├───────────--────--───-──────────┴──────────┴──────────------
-                                     &mt MODGUI TAB  &lt SYMBOL BSPC      &lt SYMBOL SPACE   &kp ENTER
+                                     &mt LMETA TAB  &lt SYMBOL BSPC      &lt SYMBOL SPACE   &kp ENTER
                                 -----------------------------------------------------------------------------
             >;
         };
@@ -71,7 +71,7 @@
         //│  G       │  X       │  J       │  K       │  Z       │   │  Q       │  R       │  M       │  F       │  P       │
             &kp G      &kp X      &kp J      &kp K      &kp Z          &kp Q      &kp R      &kp M      &kp F      &kp P
         //╰──────────┴──────────┴──────────-──────────--─────────┤   ├──────────--─────────-──────────-──────────-──────────╯
-                                 &mt MODGUI TAB  &lt SYMBOL BSPC      &lt SYMBOL SPACE   &kp ENTER
+                                 &mt LMETA TAB  &lt SYMBOL BSPC      &lt SYMBOL SPACE   &kp ENTER
                               -----------------------------------------------------------------------------
                                          
 
