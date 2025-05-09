@@ -14,7 +14,6 @@
 #define SYMBOL  1
 #define NUMPAD  2
 #define NAVIGL  3
-#define ENGRAM  4
 
 
 / {
@@ -72,7 +71,8 @@
         //│   `      │   /      │  ~       │  ,       │   ~          │  |       │  :       │  .       │   \      │  ?       │
             &trans     &kp FSLH   &kp TILDE  &kp COMMA  &kp SEMI       &kp PIPE   &kp COLON  &kp DOT    &kp BSLH   &kp QMARK
         //╰──────────┴──────────┴──────────-──────────-──────────┤   ├──────────-──────────--─────────┴──────────┴──────────╯
-                                         &tog QWERTY  &tog NUMPAD      &tog NUMPAD  &tog ENGRAM
+                                         // &tog QWERTY  &tog NUMPAD      &tog NUMPAD  &tog ENGRAM
+                                        &mt LMETA TAB  &lt SYMBOL BSPC        &lt SYMBOL SPACE   &kp ENTER
         //                             ---------------------------------------------------------
             >;
         };
@@ -91,7 +91,7 @@
         // │          │          │          │          │          │   │ /        │  7       │  8       │  9       │  0       │
             &trans     &trans     &trans     &trans     &trans          &caps_word &kp N7     &kp N8     &kp N9     &kp N0
         // ╰──────────┴──────────┴─────────────────────--─────────┤   ───────────-──────────--─────────┴──────────┴──────────╯
-                                            &tog QWERTY &tog NAVIGL    &tog NAVIGL  &tog ENGRAM
+                                            &mt LMETA TAB  &lt SYMBOL BSPC        &lt SYMBOL SPACE   &kp ENTER
         //                                  ----------------------------------------------------
             >;
         };
@@ -110,31 +110,12 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────-──────────-──────────┤   ├──────────-──────────-──────────-──────────-──────────╯
-                                       &tog QWERTY &tog NAVIGL    &tog NAVIGL  &tog ENGRAM
+                                    &mt LMETA TAB  &lt SYMBOL BSPC        &lt SYMBOL SPACE   &kp ENTER
         //                         -----------------------------------------------------------
             >;
         };
 
-    engrammer_layer {
-      bindings = <
-    //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-    //│  B       │  Y       │  O       │  U       │  '       │   │  "       │  L       │  D       │  W       │  V       │
-        &kp B      &kp Y      &kp O      &kp U      &kp QUOT       &kp SQT    &kp L      &kp D      &kp W      &kp V
-    //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-    //│  C       │  I       │  E       │  A       │  ,       │   │  .       │  H       │  T       │  S       │  N       │
-        &kp C      &kp I      &kp E      &kp A      &kp COMMA     &kp DOT    &kp H      &kp T      &kp S      &kp N
-    //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-    //│  G       │  X       │  J       │  K       │  Z       │   │  Q       │  R       │  M       │  F       │  P       │
-        &kp G      &kp X      &kp J      &kp K      &kp Z          &kp Q      &kp R      &kp M      &kp F      &kp P
-    //╰──────────┴──────────┴──────────-──────────--─────────┤   ├──────────--─────────-──────────-──────────-──────────╯
-                             &mt LMETA TAB  &lt SYMBOL BSPC      &lt SYMBOL SPACE   &kp ENTER
-    //                      -----------------------------------------------------------------------------
-
-        >;
-    };
-
-    };
-};
+ };
 
 
 
