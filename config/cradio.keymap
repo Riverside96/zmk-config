@@ -11,10 +11,9 @@
 
 // Layers
 #define QWERTY  0
-#define ENGRAM  1
-#define SYMBOL  2
-#define NUMPAD  3
-#define NAVIGL  4
+#define SYMBOL  1
+#define NUMPAD  2
+#define NAVIGL  3
 
 
 / {
@@ -58,6 +57,7 @@
             >;
         };
 
+        
 
         symbol_layer {
             bindings = <
